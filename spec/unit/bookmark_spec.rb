@@ -32,4 +32,13 @@ describe Bookmark do
       expect(Bookmark.all.length).to eq 0
     end
   end
+  describe '#update' do
+    it 'updates selected bookmark' do
+      Bookmark.add("http://www.google.com", "Google")
+      Bookmark.update(id: Bookmark.all.first.id, url: "http://www.dogpix.com", title: "Dog Pix")
+
+      expect(Bookmark.all.map { |bookmark| bookmark.title }).to include "Dog Pix"
+      expect(Bookmark.all.map { |bookmark| bookmark.url }).to include "http://www.dogpix.com"
+    end
+  end
 end

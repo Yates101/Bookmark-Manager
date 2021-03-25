@@ -1,0 +1,6 @@
+<form action="/bookmarks/<%= @bookmark_id %>" method='post'>
+  <input type='hidden' name='_method' value='PUT'/>
+  <input type='text' name='title' placeholder='enter bookmark name'>
+  <input type='text' name='url' placeholder='enter url here'>
+  <input type='submit' value='Update'>
+</form>

@@ -33,6 +33,10 @@ class Bookmark
     connex.exec("DELETE FROM bookmarks WHERE id = #{id}")
   end
 
+  def self.update(id:, url:, title:)
+    connex.exec("UPDATE bookmarks SET url = '#{url}', title = '#{title}' WHERE id = #{id}")
+  end
+
   def initialize(id, url, title)
     @id = id
     @url = url

@@ -42,3 +42,8 @@ Comment on bookmarks
 Tag bookmarks into categories
 Filter bookmarks by tag
 Users are restricted to manage only their own bookmarks
+
+## Update bookmarks
+As a user
+So I can update my bookmarks
+I would like to select and edit my bookmarks
