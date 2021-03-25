@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/alec/Projects/makers-course/afternoon-challenges/Bookmark-Manager/spec/features/adding_bookmarks_spec.rb": [
+      "/Users/david/Projects/Week4/Thursday/Bookmark-Manager/spec/features/adding_bookmarks_spec.rb": [
         1,
         1,
         1,
@@ -13,42 +13,42 @@
         null,
         null
       ],
-      "/Users/alec/Projects/makers-course/afternoon-challenges/Bookmark-Manager/spec/features/deleting_bookmarks_spec.rb": [
+      "/Users/david/Projects/Week4/Thursday/Bookmark-Manager/spec/features/deleting_bookmarks_spec.rb": [
         1,
         1,
         1,
         1,
         1,
         null,
-        1,
-        0,
-        null,
-        null
-      ],
-      "/Users/alec/Projects/makers-course/afternoon-challenges/Bookmark-Manager/spec/features/homepage_spec.rb": [
-        1,
-        1,
         1,
         1,
         null,
         null
       ],
-      "/Users/alec/Projects/makers-course/afternoon-challenges/Bookmark-Manager/spec/features/viewing_bookmarks_spec.rb": [
+      "/Users/david/Projects/Week4/Thursday/Bookmark-Manager/spec/features/homepage_spec.rb": [
         1,
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
         1,
         1,
         1,
         null,
         null
       ],
-      "/Users/alec/Projects/makers-course/afternoon-challenges/Bookmark-Manager/spec/unit/bookmark_spec.rb": [
+      "/Users/david/Projects/Week4/Thursday/Bookmark-Manager/spec/features/viewing_bookmarks_spec.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/david/Projects/Week4/Thursday/Bookmark-Manager/spec/unit/bookmark_spec.rb": [
         1,
         1,
         null,
@@ -80,12 +80,12 @@
         1,
         1,
         null,
-        0,
+        1,
         null,
         null,
         null
       ]
     },
-    "timestamp": 1616684562
+    "timestamp": 1616685752
   }
 }

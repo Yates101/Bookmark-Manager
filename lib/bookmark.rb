@@ -19,7 +19,7 @@ class Bookmark
   def self.all
     bookmark_list = []
     result = connex.exec("SELECT * FROM bookmarks")
-    result.each do |row| 
+    result.each do |row|
       bookmark_list << Bookmark.new(row['id'], row['url'], row['title'])
     end
     bookmark_list
@@ -27,6 +27,10 @@ class Bookmark
 
   def self.add(url, title)
     connex.exec("INSERT INTO bookmarks (url, title) VALUES ('#{url}', '#{title}')")
+  end
+
+  def self.delete(id:)
+    connex.exec("DELETE FROM bookmarks WHERE id = #{id}")
   end
 
   def initialize(id, url, title)
