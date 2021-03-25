@@ -2,15 +2,34 @@
   "RSpec": {
     "coverage": {
       "/Users/alec/Projects/makers-course/afternoon-challenges/Bookmark-Manager/spec/features/adding_bookmarks_spec.rb": [
-
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/alec/Projects/makers-course/afternoon-challenges/Bookmark-Manager/spec/features/deleting_bookmarks_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null
       ],
       "/Users/alec/Projects/makers-course/afternoon-challenges/Bookmark-Manager/spec/features/homepage_spec.rb": [
         1,
         1,
         1,
         1,
-        null,
-        null,
         null,
         null
       ],
@@ -40,16 +59,33 @@
         1,
         null,
         null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        2,
+        2,
+        null,
+        null,
         null,
         1,
         1,
         1,
         1,
+        null,
+        0,
         null,
         null,
         null
       ]
     },
-    "timestamp": 1616669896
+    "timestamp": 1616684562
   }
 }

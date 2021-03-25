@@ -4,13 +4,13 @@ README
 
 A basic bookmark manager that uses PostgreSQL databases to store and return bookmarks.
 
-[UI Sketch](./images/Sketch.png)
+![UI Sketch](./images/Sketch.png)
 
 **Set up local databases before running (commands in db/migrations)**
 
 * Features
 
-##Show a list of bookmarks:
+## Show a list of bookmarks:
 
 **User story:**
 As a user,
@@ -25,14 +25,18 @@ Class: Bookmark
 method: all
 attributes: name, URL
 
-##Add new bookmarks:
+## Add new bookmarks:
 
 **User story:**
 As a user
 So I may update my bookmarks
 I would like to be able to add bookmarks
 
-Delete bookmarks
+## Delete bookmarks
+As a user
+So I may remove unwanted bookmarks
+I would like to be able to delete bookmarks
+
 Update bookmarks
 Comment on bookmarks
 Tag bookmarks into categories

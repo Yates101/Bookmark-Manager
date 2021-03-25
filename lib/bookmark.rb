@@ -1,5 +1,7 @@
 class Bookmark
 
+  attr_reader :id, :url, :title
+
   require 'pg'
 
   def self.connex
@@ -15,11 +17,21 @@ class Bookmark
   end
 
   def self.all
+    bookmark_list = []
     result = connex.exec("SELECT * FROM bookmarks")
-    result.map { |bookmark| bookmark['url'] }
+    result.each do |row| 
+      bookmark_list << Bookmark.new(row['id'], row['url'], row['title'])
+    end
+    bookmark_list
   end
 
-  def self.add(url)
-    connex.exec("INSERT INTO bookmarks (url) VALUES ('#{url}')")
+  def self.add(url, title)
+    connex.exec("INSERT INTO bookmarks (url, title) VALUES ('#{url}', '#{title}')")
+  end
+
+  def initialize(id, url, title)
+    @id = id
+    @url = url
+    @title = title
   end
 end
