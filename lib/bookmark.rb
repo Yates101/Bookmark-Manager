@@ -2,19 +2,24 @@ class Bookmark
 
   require 'pg'
 
+  def self.connex
+    if ENV['ENVIRONMENT'] == 'test'
+      PG.connect(dbname: 'bookmark_manager_test')
+    else
+      PG.connect(dbname: 'bookmark_manager')
+    end
+  end
+
+  def self.instance
+    @bookmark
+  end
+
   def self.all
-    conn = PG.connect( dbname: 'bookmark_manager' )
-    conn.exec( "SELECT * FROM bookmarks" ) do |result|
-      puts "Bookmarks:"
-        result.each do |row|
-          puts "%-16s" %
-          row.values_at('url')
-        end
-    end 
+    result = connex.exec("SELECT * FROM bookmarks")
+    result.map { |bookmark| bookmark['url'] }
   end
 
-  def initialize
-    @@bookmark_list << self
+  def self.add(url)
+    connex.exec("INSERT INTO bookmarks (url) VALUES ('#{url}')")
   end
-
 end

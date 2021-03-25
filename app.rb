@@ -1,12 +1,10 @@
-require 'sinatra/base'
+require_relative './lib/bookmark'
 require 'pg'
+require 'sinatra/base'
 
 class BookmarksManager < Sinatra::Base
 
-  enable :sessions
-
   get '/' do
-    "Hello World!"
     erb(:index)
   end
 
@@ -14,6 +12,11 @@ class BookmarksManager < Sinatra::Base
     erb(:bookmark)
   end
 
+  post '/add' do
+    Bookmark.add(params[:url])
+    redirect '/bookmark'
+  end
+  
   run! if app_file == $0
 
 end
